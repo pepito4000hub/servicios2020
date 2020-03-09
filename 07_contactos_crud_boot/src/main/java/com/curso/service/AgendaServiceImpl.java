@@ -47,4 +47,13 @@ public class AgendaServiceImpl implements AgendaService {
 		return agendaDao.findByEmail(email);
 	}
 
+	@Override
+	public Contacto recuperarPorId(int idContacto) {
+		// TODO Auto-generated method stub
+		return agendaDao.findById(idContacto).orElse(null);
+	}
+	
+	
+	
+
 }

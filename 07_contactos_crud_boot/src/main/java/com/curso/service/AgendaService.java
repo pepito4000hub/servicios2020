@@ -5,7 +5,7 @@ import java.util.List;
 import com.curso.model.Contacto;
 
 public interface AgendaService {
-	//añade el contacto si no está repetido el
+	//aï¿½ade el contacto si no estï¿½ repetido el
 	//email
 	void altaContacto(Contacto contacto);
 	List<Contacto> obtenerContactos();
@@ -13,4 +13,5 @@ public interface AgendaService {
 	void eliminar(String email);
 	void actualizarContacto(Contacto contacto);
 	Contacto recuperarPorEmail(String email);
+	Contacto recuperarPorId(int idContacto);
 }

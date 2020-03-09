@@ -44,6 +44,12 @@ public class ContactosController {
 		agenda.eliminar(idContacto);
 	}
 	
+	@GetMapping(value="/contactoid/{idcontacto}", produces=MediaType.APPLICATION_JSON_VALUE)
+	public Contacto getContacto(@PathVariable("idcontacto") int idcontacto) {
+		return agenda.recuperarPorId(idcontacto);
+	}
+	
+	
 }
 
 
